@@ -66,11 +66,7 @@ function App() {
 
   return (
     <div>
-      <img
-        className="relative w-screen h-screen"
-        // src="https://images.unsplash.com/photo-1589642314445-999ac13b0075?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMzYwOTV8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60"
-        src={image}
-      />
+      <img className="relative w-screen h-screen" src={image} />
 
       <div className="p-5 background flex space-x-20 items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
         <div className="flex flex-col items-center">
@@ -94,6 +90,7 @@ function App() {
 
         {/* The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist. */}
         <div className="text-white justify-start">
+          <p className="text-xl">CITY INFO</p>
           <h2>{`CITY : ${wheatherInfo?.name}`}</h2>
           <h2>{`TEMP : ${wheatherInfo?.main?.temp}`} Degrees Celsius</h2>
           <h3 className=" whitespace-nowrap">
